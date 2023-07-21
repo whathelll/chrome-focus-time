@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Focus Time</title>
+  <style>
+    body {
+      width: 300px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f7f7f7;
+    }
+    h1 {
+      color: #333;
+    }
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Focus Time</h1>
+  <p>Enter the domains to block (comma separated):</p>
+  <textarea id="domains" rows="4"></textarea>
+  <p>Enter the focus times (start hour, start minute, end hour, end minute):</p>
+  <textarea id="times" rows="4"></textarea>
+  <button id="save">Save</button>
+  <script src="popup.js"></script>
+</body>
+</html>
